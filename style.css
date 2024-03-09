@@ -1,0 +1,42 @@
+body{
+   background-image:url(asthetic\ background1.png);
+}
+
+h1{
+    text-align: left;
+    color:rgb(211, 124, 47);
+}
+.container { 
+      display: flex;
+      flex-direction:column;
+      width: 700px;
+      box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.15);
+      border-top: 8px solid rgb(228, 145, 73);
+      border-bottom: 8px solid rgb(228, 145, 73);
+      background-color: antiquewhite;
+      border-radius: 12px;
+      
+     
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+ 
+.todo__value{
+    background:transparent;
+    border:none;
+    outline:none;
+    font-family: 'Quicksand' , sans-serif;
+   font-size: 1em;
+   flex-grow: 1;
+}
+.todo:has(.todo__checkbox:checked){
+    color: #555555;
+    background:rgb(241, 221, 204);
+ 
+    text-decoration: line-through;
+    order: 1;
+}
+
